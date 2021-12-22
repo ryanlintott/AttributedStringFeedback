@@ -9,8 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            AttributedStringIPAView()
+                .tabItem {
+                    Image(systemName: "text.bubble")
+                    Text("Feedback")
+                }
+            
+            BrokenCharacters()
+                .tabItem {
+                    Image(systemName: "abc")
+                    Text("Broken Characters")
+                }
+        }
     }
 }
 
