@@ -12,8 +12,6 @@ struct AttributedStringIPAView: View {
     let string1 = "Hello"
     // Strings with unusual characters like ǣ do not work
     let string2 = "Hǣllo"
-    // Other characters that will break the string include:
-    let brokenCharacters = "ǢĀāĒēĪīŌōÞþÐðŪūǷƿȲȳȜ"
     
     // Supplying the same very simple IPA to all strings so it is clear whether or not the IPA is spoken
     let ipa = "ga"
