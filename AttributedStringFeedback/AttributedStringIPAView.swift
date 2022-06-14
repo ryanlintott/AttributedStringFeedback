@@ -14,7 +14,7 @@ struct AttributedStringIPAView: View {
     let string2 = "Hǣllo"
     
     // Supplying the same very simple IPA to all strings so it is clear whether or not the IPA is spoken
-    let ipa = "ga"
+    let ipa = "gɑ"
     
     var ipaString1: AttributedString {
         var string = AttributedString(string1)

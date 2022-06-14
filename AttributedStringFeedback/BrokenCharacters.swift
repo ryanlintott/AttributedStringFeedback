@@ -19,7 +19,7 @@ struct BrokenCharacters: View {
     
     func ipaAttributed(_ string: String) -> AttributedString {
         var attributedString = AttributedString(string)
-        attributedString.accessibilitySpeechPhoneticNotation = "ga"
+        attributedString.accessibilitySpeechPhoneticNotation = "gɑ"
         return attributedString
     }
     

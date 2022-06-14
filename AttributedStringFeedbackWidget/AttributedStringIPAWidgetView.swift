@@ -12,7 +12,7 @@ struct AttributedStringIPAWidgetView: View {
     let string = "Hello"
 
     // Supplying a very simple IPA so it is clear whether or not the IPA is spoken
-    let ipa = "ga"
+    let ipa = "gɑ"
     
     var ipaString: AttributedString {
         var string = AttributedString(string)
@@ -41,7 +41,9 @@ struct AttributedStringIPAWidgetView: View {
 
 struct AttributedStringIPAView_Previews: PreviewProvider {
     static var previews: some View {
-        AttributedStringIPAWidgetView()
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+//        AttributedStringIPAWidgetView()
+        ContainerRelativeShape()
+            .inset(by: 3)
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
